@@ -8,3 +8,12 @@ export class CreateUserDto {
   @IsEmail()
   public email: string;
 }
+
+export class UpdateUserDto {
+  @IsString()
+  @IsNotEmpty()
+  public name: string;
+
+  @IsEmail()
+  public email: string;
+}
